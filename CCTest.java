@@ -8,19 +8,6 @@ import java.util.Queue;
  * Richie Ramrati
  */
 
-/**
- * The test results support the trend that the number of edges translates to an increase
- * in the size of the maximum connected components. As the 10000 vertex graph increases
- * the number of edges by 2000 with each graph up until 2*N, the size of the largest
- * connected component increases and the number of connected components decline.  I did
- * not observe a case where there was a single connected component. The maximum number of
- * edges in a graph of size N, would be N(N-1)/2 for an undirected graph but achieving a
- * single connected component would not require nearly as many given the growth rate of the
- * largest connected component at only size 2N. Given that the number of edges needed to
- * form a connected a single connected component was not linear (2N), nor was it quadratic
- * (N(N-1)/2), I would estimate the number of edges needed would be log-linear such that it
- * needs some approximation of N*log(N) edges.
- */
 public class CCTest {
 
     public static void main(String[] args) {
